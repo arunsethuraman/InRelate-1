@@ -2,9 +2,14 @@ Package: InRelate
 Type: Package
 Title: InRelate: An R Package to Estimate Pairwise Relatedness
 Version: 0.1.0
-Author: Khuyen Nguyen and Arun Sethuraman
-Maintainer: Khuyen Nguyen <knguyen5139@sdsu.edu>
-Description: An R software package to estimate genetic relatedness while accounting for population structure. This R package utilizes the output from MULTICLUST or STRUCTURE for allele frequency data and admixture proportion data.
+Authors@R: c(
+    person("Khuyen", "Nguyen", role = c("aut", "cre")),
+    person("Arun", "Sethuraman", role = "aut")
+)
+Description: An R software package to estimate genetic relatedness while
+    accounting for population structure. This R package utilizes the output
+    from MULTICLUST or STRUCTURE for allele frequency data and admixture
+    proportion data.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -12,3 +17,10 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports:
     Rsolnp
+Suggests:
+    knitr,
+    rmarkdown,
+    pkgdown
+VignetteBuilder: knitr
+URL: https://itskhuyen.github.io/InRelate/, https://github.com/itskhuyen/InRelate
+BugReports: https://github.com/itskhuyen/InRelate/issues
